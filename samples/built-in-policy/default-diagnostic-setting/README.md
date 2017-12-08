@@ -21,7 +21,7 @@ $assignment
 
 ````cli
 
-az policy definition create --name 'default-diagnostic-setting' --display-name 'Apply Diagnostic Settings for Network Security Groups' --description 'This policy automatically deploys diagnostic settings to network security groups.' --rules 'https://raw.githubusercontent.com/Azure/azure-policy/master/samples/Monitoring/default-diagnostic-setting/azurepolicy.rules.json' --params 'https://raw.githubusercontent.com/Azure/azure-policy/master/samples/Monitoring/default-diagnostic-setting/azurepolicy.parameters.json' --mode All
+az policy definition create --name 'default-diagnostic-setting' --display-name 'Apply Diagnostic Settings for Network Security Groups' --description 'This policy automatically deploys diagnostic settings to network security groups.' --rules 'https://raw.githubusercontent.com/dave-read/azure-policy/master/samples/built-in-policy/default-diagnostic-setting/azurepolicy.rules.json' --params 'https://raw.githubusercontent.com/dave-read/azure-policy/master/samples/built-in-policy/default-diagnostic-setting/azurepolicy.parameters.json' --mode All
 
 az policy assignment create --name <assignmentname> --scope <scope> --policy "default-diagnostic-setting" 
 
